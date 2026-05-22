@@ -1,0 +1,5 @@
+Coke 15.00 10
+Sprite 20.00 10
+Royal 20.00 10
+Yakult 15.00 9
+Water 20.00 10

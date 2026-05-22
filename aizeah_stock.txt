@@ -1,0 +1,5 @@
+Shin_Ramyun 40 10
+Buldak_Bokkeum-myeon 70 10
+Rose_Buldak 85 10
+Chapagetti 89 10
+Sesame_Ramen 70 10
