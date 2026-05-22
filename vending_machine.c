@@ -409,6 +409,7 @@ void buyProduct(float *balance,
 
     prices[*purchaseCount] = prod->price;
 
+    
     (*purchaseCount)++;
 
     saveStock(&stores[storeIdx]);
