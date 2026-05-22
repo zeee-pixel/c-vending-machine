@@ -41,11 +41,9 @@ Store stores[NUM_STORES] = {
 
     { "Jasmine's Store", "Chips", "jasmine_stock.txt", {}, 0 },
 
-    { "Aizeah's Store", "Ready-to-Eat Meals",
-      "aizeah_stock.txt", {}, 0 },
+    { "Aizeah's Store", "Ready-to-Eat Meals", "aizeah_stock.txt", {}, 0 },
 
-    { "Cyril's Store", "Candies",
-      "cyril_stock.txt", {}, 0 }
+    { "Cyril's Store", "Candies", "cyril_stock.txt", {}, 0 }
 };
 
 /* ================= FUNCTION PROTOTYPES ================= */
@@ -58,10 +56,7 @@ void displayProducts(Store *s, int storeNumber);
 void viewAllProducts(void);
 void viewStoreProducts(int storeIdx);
 
-void buyProduct(float *balance,
-                char purchases[][MAX_NAME_LEN],
-                float prices[],
-                int *purchaseCount);
+void buyProduct(float *balance, char purchases[][MAX_NAME_LEN], float prices[], int *purchaseCount);
 
 void viewInventory(float balance,
                    char purchases[][MAX_NAME_LEN],
@@ -278,7 +273,7 @@ void printHeader(const char *title) {
 
 void displayProducts(Store *s, int storeNumber) {
 
-    printf("\n[STORE %d] %s - %s\n",
+    printf("\n[ STORE : %d] %s - %s\n",
            storeNumber,
            s->storeName,
            s->category);
@@ -297,11 +292,7 @@ void displayProducts(Store *s, int storeNumber) {
 
         if (s->items[i].stock > 0) {
 
-            printf("%-5d %-25s PHP %-7.2f %d pcs\n",
-                   i + 1,
-                   s->items[i].name,
-                   s->items[i].price,
-                   s->items[i].stock);
+            printf("%-5d %-25s PHP %-7.2f %d pcs\n", i + 1, s->items[i].name, s->items[i].price, s->items[i].stock);
 
         } else {
 
@@ -591,5 +582,5 @@ int main(void) {
 
     } while (choice != 0);
 
-    return 0;
+    return 0;   
 }
